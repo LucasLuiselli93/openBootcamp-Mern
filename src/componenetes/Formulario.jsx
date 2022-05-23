@@ -55,6 +55,7 @@ const Formulario = ( { setMoneda, setCrypto}) => {
           const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD";
           const resultado = await axios.get(url)
           setListadoCryptos(resultado.data.Data)
+          console.log(resultado)
       }
       consultarApi()
 
